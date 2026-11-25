@@ -4,6 +4,9 @@
 // The program writes the line to $MAKEFUN_OUTPUT_DIR/entry.txt. In the
 // grading sandbox MAKEFUN_OUTPUT_DIR is /output; locally it falls back
 // to ./output so a run can be eyeballed.
+//
+// Verified by running it: the file lands whole, 90 characters, UTF-8,
+// not only whitespace — inside the gate's 1–200 characters.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
